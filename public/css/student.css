@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: darkgrey;
+}
+.welcome{
+    margin: 10px;
+    padding: 10px;
+    /* font-size: 20px; */
+    color: white;
+}
+.name{
+    font-size: 25px;
+    color: aqua;
+}
+.logout{
+    font-size: 30px;
+    position: absolute;
+    right: 30px;
+    top: 80px;
+}
+.logout-btn{
+    box-sizing: border-box;
+    border: 5px solid black;
+    height: auto;
+    width: auto;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: gray;
+}
+.main-content{
+    text-align: center;
+    /* margin: 200px; */
+    text-decoration: underline;
+}
+.heading{
+    font-size: 25px;
+}
+.content{
+    box-sizing: border-box;
+    border: 2px solid black;
+    height: 250px;
+    width: 700px;
+    border-radius: 10px;
+    background-color: gray;
+    /* text-align: center; */
+    margin: 10px;
+    margin-left: 400px;
+    text-align: left;
+}
+
+.right{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    width: 200px;
+    height: 225px;
+    /* margin: 10px; */
+}
+.left{
+    font-size: 25px;
+    color: white;
+    position:relative;
+    bottom:250px;
+    left: 250px;
+    margin: 10px;
+}
+.btn{
+    list-style: none;
+    display: inline;
+    justify-content: space-between;
+    font-size: 25px;
+    color: black;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 15px;
+    /* box-sizing: border-box; */
+    /* border: 2px solid black; */
+    /* height: 2px; */
+    /* width: 3px; */
+
+}
+.edit{
+    color: black;
+}
+
+.prof-img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 220px;
+    width: 200px;
+    margin: 0;
+    position: relative;
+    top: 5px;
+}
+
+.page{
+    align-items: center;
+    margin: 30px;
+    font-size: 50px;
+    position: absolute;
+    left: 650px;
+}
+.pages{
+    text-decoration: underline;
+    color: cyan;
+}
+
+
+  

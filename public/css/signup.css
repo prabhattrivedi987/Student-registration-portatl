@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: darkgray;
+}
+.login{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-decoration: underline;
+    margin: 30px;
+
+}
+.form-data{
+    text-align: center;
+    box-sizing: border-box;
+    border:  10px solid gray;
+    height: 300px;
+    width: 500px;
+    /* text-align: center; */
+    margin: 20px;
+    position: relative;
+    left: 550px;
+    background-color: gray;
+}
+input{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    left: 50px;
+    margin: 20px;
+}
+button{
+    font-size: 35px;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    position: relative;
+    /* left: 20px; */
+    background-color: darkgray;
+    
+}
+button:hover{
+    text-decoration: underline;
+    color: white;
+    background-color: lightgray;
+}
+.anchor{
+    margin: 30px;
+    position: relative;
+    font-size: 20px;
+    
+}

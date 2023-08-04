@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <%-include('partials/navbar.ejs')%>
+    <div class="login">
+        <h1>Student SignUp</h1>
+        <form action="/signup" method="post" class="form-data">
+            <input type="username" name="username" placeholder="UserName">
+            <input type="email" name="email" placeholder="Email ID">
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit">SignUp</button>
+            <div class="anchor">
+                <a href="http://localhost:3000/login">LogIn</a><strong style="color: white; font: size 15px; margin:10px">/</strong>
+                <a href="http://localhost:3000/signup">SignUp</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

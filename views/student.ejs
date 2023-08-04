@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data</title>
+    <link rel="stylesheet" href="css/student.css"></head>
+<body>
+    <%-include('partials/navbar') %>
+
+    <div class="welcome"> <h1> <span class="name"></span> </h1></div>
+        <div class="logout"><a class="logout-btn" href="/logout">logout</a></div>           
+
+
+    <div class="main-content">
+       <div class="heading">
+           <h1>Student's Data</h1>
+       </div>
+    </div>
+
+
+    <%if(students.length>0){%>
+        <%students?.forEach((student)=>{%>
+
+          <div class="datas">
+                <div class="content">
+
+                    <section class="right">
+                        <img class="prof-img" src="<%=student?.image%>" alt="profile image">
+                    </section>
+
+
+                    <section class="left">
+                        <p class="username"><%=student?.name%></p>
+                        <p class="fname"><%=student?.fname%></p>
+                        <p class="email"><%=student?.email%></p>
+                        <p class="dob"><%=student?.dob%></p>
+                        <p class="course"><%=student?.course%></p>
+                        <p class="univ"><%=student?.university%></p>
+                        <button class="btn"><a href="/update/<%=student?._id%>">Update</a></button>
+                        <button class="btn"><a href="/delete/<%=student?._id%>">Delete</a></button>
+                    </section>
+                </div>
+            </div>
+
+            <%})%>
+
+            <div  class="page">
+                <%if(currentPage>=2){%>
+                    <a class="pages" href="?page=<%=currentPage-1%>">Prev</a>
+                <%}%>
+                
+                <%for(let i=1;i<=totalPages;i++){%>   
+                    <a class="pages" href="?page=<%=i%>"><%=i%></a>
+                <%}%>
+                <%if(currentPage < totalPages){%>
+                    <a class="pages" href="?page=<%=currentPage+1%>">Next</a>
+                <%}%>
+
+            
+
+                </div>
+                
+
+        <%}else{%>
+
+            <h1 style="text-align:center;margin:200px; color:white;">No Data Recorded till now</h1>
+        
+        <%}%>
+
+</body>
+
+</html>
